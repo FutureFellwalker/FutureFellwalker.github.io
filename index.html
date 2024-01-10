@@ -1,20 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    
+<head>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+</head>
+
+
+<body id="page-top">
+
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="js-scroll-trigger" href="#page-top">
+        HOME
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#description">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#website">Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#testimonial">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- =======================  LANDING SECTION ======================= -->
+
+  <header class="masthead">
+    <div id="particles-js"></div>
+    <div class="textlanding">
+      <p style="display:inline; font-size: 35px; padding-left: 30px">JOHN</p>
+      <img width="90px" style="display:inline; margin-bottom: 20px; margin-right: 10px; margin-left: 10px"
+        src="img/logo/Home_single_big.png">
+      <p style="display:inline; font-size: 35px">BRABSON</p>
+      <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
+      <br>
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://twitter.com/R_Graph_Gallery">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-buttons">
+          <a href="https://github.com/FutureFellwalker">
+            <i class="fa fa-github" style="color: white"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-buttons">
+          <a href="https://www.linkedin.com/in/johnbrabson/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <br><br>
+      <p>Welcome to John Brabson's <u>homepage</u>.<br>I am a 2nd-year PhD student at the University of Miami
+        working in the <a href="https://thecimminolab.com/">Cimmino Lab</a>.</p>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Contact</a>
+    </div>
+    <div class="arrowlanding">
+      <a class="js-scroll-trigger" href="#description">
+        <p style="font-size: 80px; color: #69b3a2">&#xfe40;</p>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/appHome.js"></script>
+
+
   <body style="background-color:F5F5F5;">
     <h1> Hello World!</h1>
     <p> I am a PhD student in the lab of Luisa Cimmino at the University of Miami studying cancer epigenetics. My research focuses on the role of DNA demethylation by TET enzymes in acute myeloid leukemia, and how modulating oxidized methylcytosines can influcence leukemic progression. </p>
 
-    <a href="https://thecimminolab.com/">  <h2> Cimmino Lab website</h2>  </a>
 
 
 
 
+  <!-- ======================== MAP SECTION ============================ -->
 
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 300px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+      background-color: grey;
+      opacity: 1
+    }
+  </style>
+  <!-- center: { lat: 43.61092, lng: 3.87723 } -->
 
-
-
-
-    
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <script>
+    var mymap = L.map('map').setView([25.789780, -80.210720], 3);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoiaG9sdHp5YW4iLCJhIjoiY2tmczBrd3BrMGJodDJ0bXQ5aW9sZXJ6eCJ9.8zTEkfZ54u4TvDGNjNh-Cg'
+    }).addTo(mymap);
+    var marker = L.marker([25.789780, -80.210720]).addTo(mymap);
+  </script>
 </html>
